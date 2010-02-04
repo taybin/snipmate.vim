@@ -214,3 +214,10 @@ snippet fun
 # $... = array (...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
+snippet try
+	try {
+		${1:// Code...}
+	}
+	catch (${2: Exception e}) {
+		${3:// Exception handling...}
+	}
