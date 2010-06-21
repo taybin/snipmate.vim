@@ -114,6 +114,7 @@ snippet head
 		<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
 		${2}
 	</head>
+	${3}
 snippet title
 	<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>${2}
 snippet script
@@ -161,8 +162,9 @@ snippet form
 
 	<p><input type="submit" value="Continue &rarr;"`Close()`></p>
 	</form>
+	${4}
 snippet h1
-	<h1 id="${1:heading}">${2:$1}</h1>
+	<h1 id="${1:heading}">${2:$1}</h1>${3}
 snippet input
 	<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="${3}"`Close()`>${4}
 snippet label
