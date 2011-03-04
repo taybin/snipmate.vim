@@ -12,10 +12,10 @@ snippet mainn
 		return 0;
 	}
 # #include <...>
-snippet inc
-	#include <${1:stdio}.h>${2}
-# #include "..."
 snippet Inc
+	#include <${1:stdio.h}>${2}
+# #include "..."
+snippet inc
 	#include "${1:`Filename("$1.h")`}"${2}
 # #ifndef ... #define ... #endif
 snippet Def
@@ -23,7 +23,7 @@ snippet Def
 	#define ${1:SYMBOL} ${2:value}
 	#endif${3}
 snippet def
-	#define
+	#define 
 snippet ifdef
 	#ifdef ${1:FOO}
 		${2:#define }
