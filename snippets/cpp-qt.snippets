@@ -1,0 +1,10 @@
+# connect
+snippet con
+	connect( ${1:sender},
+	         SIGNAL( ${2:signal}( ${3:args} ) ),
+	         ${4:receiver},
+	         ${5:SLOT}( ${6:slot}( $3 ) ) );
+	${7}
+# qDebug (for Qt)
+snippet debug
+	qDebug() << ${1:Q_FUNC_INFO}${2};${3}
